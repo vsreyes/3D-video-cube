@@ -38,11 +38,33 @@ section .box div span {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #ccc;
 }
+section .box div span video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0px);
+}
+
+section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(20px);
+}
 section .box div span:nth-child(1) {
   transform: rotateX(0deg) translate3d(0, 0, 200px);
 }
 section .box div span:nth-child(2) {
   transform: rotateY(90deg) translate3d(0, 0, -200px);
+}
+section .box div span:nth-child(2) video {
+  transform: rotateY(180deg);
 }
 section .box div span:nth-child(3) {
   transform: rotateX(90deg) translate3d(0, 0, 200px);
